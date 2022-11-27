@@ -1,1 +1,8 @@
-<p>info-experience-work works!</p>
+<div [ngClass]="{container: true}">
+    <h5 [ngClass]="{'text-center': true}">{{titleExperienceWork}}</h5>
+    <ol>
+        <li *ngFor="let item of experincesWork">
+            {{ item.dateStart | date: "MMMM y"}} - {{ item.dateFinish | date: "MMMM y"}} - {{item.work}}
+        </li>
+    </ol>
+</div>

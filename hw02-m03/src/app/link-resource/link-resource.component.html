@@ -1,1 +1,8 @@
-<p>link-resource works!</p>
+<div [ngClass]="{container: true}">
+    <h5 [ngClass]="{'text-center': true}">{{titleResource}}</h5>
+    <ul>
+        <li *ngFor="let item of resources">
+            <a href={{item.link}}>{{item.description}}</a>
+        </li>
+    </ul>
+</div>

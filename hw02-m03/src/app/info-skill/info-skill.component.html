@@ -1,1 +1,6 @@
-<p>info-skill works!</p>
+<div [ngClass]="{container: true}">
+    <h5 [ngClass]="{'text-center': true}">{{titleSkill}}</h5>
+    <ol>
+        <li *ngFor="let item of skills">{{item.skill}} - Курсы: {{item.company}}</li>
+    </ol>
+</div>
