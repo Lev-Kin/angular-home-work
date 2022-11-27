@@ -20,5 +20,5 @@ import { LinkResourceComponent } from './link-resource/link-resource.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 }

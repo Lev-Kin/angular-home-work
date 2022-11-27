@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./info-skill.component.css']
 })
 export class InfoSkillComponent {
-  
+
   titleSkill: string = "Информация о навыках.";
 
   skills = [
