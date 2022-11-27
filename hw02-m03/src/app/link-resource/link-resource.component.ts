@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./link-resource.component.css']
 })
 export class LinkResourceComponent {
+  
   titleResource: string = "Ссылки на ресурсы.";
 
   resources = [
