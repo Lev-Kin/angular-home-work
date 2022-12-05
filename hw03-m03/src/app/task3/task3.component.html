@@ -1,1 +1,18 @@
-<p>task3 works!</p>
+<div [ngClass]="{container: true}">
+    <div [innerHtml]="htmlToAdd"></div>
+    <div [ngClass]="{'text-center': true}">
+        <button *ngFor="let transport of largestTransportWorld" (click)="handleClick(transport.click)"
+            [class]="transport.class">
+            === {{transport.id + 1}} ===
+        </button>
+    </div>
+    <div *ngIf="isButtonClick">
+        <h3 [ngClass]="{'text-center': true}">{{title}} - {{typeTransport}}</h3>
+        <div class="panel">
+            <img width="25%" height="25%" [src]="src" class="image" alt="ImageURL">
+            <div class="text">
+                <div [innerHtml]="text"></div>
+            </div>
+        </div>
+    </div>
+</div>
