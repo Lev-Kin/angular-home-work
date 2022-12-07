@@ -53,10 +53,6 @@ export class Task1Component {
 
   ];
 
-  getSizeProgrammingSalary(programmingSalary: []){
-
-  }
-
   constructor() {
 
   }
