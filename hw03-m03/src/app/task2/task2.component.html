@@ -1,1 +1,10 @@
-<p>task2 works!</p>
+<div [ngClass]="{container: true}">
+    <h5 [ngClass]="{'text-center': true}">{{titleEducation}}</h5>
+    <ol>
+        <li *ngFor="let item of education">
+            {{ item.dateStart | date: "y"}} - {{ item.dateFinish | date: "y"}} - {{item.type}} - {{item.place}}
+        </li>
+    </ol>
+    <hr>
+    <p class="text-primary text-center">Далее информация из домашней работы <b>HW02-M03</b></p>
+</div>

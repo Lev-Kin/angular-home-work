@@ -1,1 +1,31 @@
-<p>task1 works!</p>
+<div [ngClass]="{container: true}">
+    <h5 [ngClass]="{'text-center': true}">{{titleSalariesProgrammingLanguage}}</h5>
+    <h5 [ngClass]="{'text-center': true}">Соединенныx Штатах Америки</h5>
+    <ul>
+        <li *ngFor="let item of programmingSalary; index as i; last as isLast">
+            {{item.type}}:
+            <br>
+            ({{item.salaryMin | currency}} - {{item.salaryMax | currency}}) - за год диапазон
+            <br>
+            {{(item.salaryMin + item.salaryMax)/2 | currency}} - за год средняя
+            <br>
+            {{((item.salaryMin + item.salaryMax)/2)/12 | currency}} - за месяц средняя
+            <br>
+            {{(((item.salaryMin + item.salaryMax)/2)/12) * 2.6 | currency:'BYN':'Br'}} - за месяц
+            средняя в белорусских рублях
+            <hr *ngIf="!isLast">
+        </li>
+    </ul>
+    <p class="text-end "><small>Даные об зарплатах взяты с сайта <a
+                href="https://www.salary.com/">www.salary.com</a></small></p>
+    <hr>
+    <br>
+    <h5 [ngClass]="{'text-center': true}">{{titleProgrammingLanguage}}</h5>
+    <ul>
+        <li *ngFor="let item of programmingLanguage">
+            {{item.type}} - {{item.undefined | percent}}
+        </li>
+    </ul>
+    <hr>
+    <p class="text-primary text-center">Далее информация из домашней работы <b>HW02-M03</b></p>
+</div>
