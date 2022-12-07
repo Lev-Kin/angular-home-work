@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Task1Component {
 
+  titleSalariesProgrammingLanguage: string = "Информация об зарплатах по языкам программирования в";
   titleProgrammingLanguage: string = "Информация об понимании языков программирования в %";
-  titleSalariesProgrammingLanguage: string = "Информация об зарплатах по языкам программированя в";
-  sizeProgrammingSalary!: number;
 
   programmingLanguage = [
     {
