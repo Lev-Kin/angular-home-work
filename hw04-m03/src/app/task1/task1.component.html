@@ -1,1 +1,12 @@
-<p>task1 works!</p>
+<div [ngClass]="{container: true}">
+    <div class="border">
+        <div class="picture"><img [src]="items[0].path" /></div>
+        <div class="description">
+            <div>Название картины: {{items[0].title | uppercase}}</div>
+            <div>Год создания: {{items[0].year}}</div>
+            <div>Автор картины: {{items[0].artist}}</div>
+            <div>Размеры: {{items[0].size}}</div>
+            <div>Местоположение: {{items[0].place}}</div>
+        </div>
+    </div>
+</div>

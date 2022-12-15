@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ITEMS } from '../mock.picture';
 
 @Component({
   selector: 'app-task1',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./task1.component.css']
 })
 export class Task1Component {
-
+  items = ITEMS;
 }
