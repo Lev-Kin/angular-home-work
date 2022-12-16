@@ -1,4 +1,18 @@
-img {
+  .border {
+    border-radius: 1em;
+    padding: 15px;
+    margin: 5px;
+    background-color: aqua;
+    text-align: center;
+  }
+
+  .frame-miniatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
     width: 50%;
     height: 50%;
     margin: 10px;
@@ -6,28 +20,20 @@ img {
     border-radius: 1em;
     border: 2px solid blue;
   }
-  
-  .border {
-    border-radius: 1em;
-    padding: 15px;
-    margin: 5px;
-    background-color: aqua;
-  }
-  
+
   .picture {
     text-align: center;
   }
-  
+
   .description {
     text-align: center;
   }
-  
+
   .min {
-    width: 25%;
-    height: 25%;
-    margin: 10px;
-    padding: 0px;
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
     border-radius: 1em;
     border: 2px solid navy;
   }
-  

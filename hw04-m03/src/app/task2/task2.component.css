@@ -2,7 +2,7 @@ img {
   width: 50%;
   height: 50%;
   margin: 10px;
-  padding: 0px;
+  padding: 0;
   border-radius: 1em;
   border: 2px solid blue;
 }
@@ -25,8 +25,8 @@ img {
 .min {
   width: 25%;
   height: 25%;
-  margin: 10px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   border-radius: 1em;
   border: 2px solid navy;
 }

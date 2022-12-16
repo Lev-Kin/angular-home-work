@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ITEMS } from '../mock.picture';
 
 @Component({
@@ -9,18 +9,22 @@ import { ITEMS } from '../mock.picture';
 })
 export class Task3Component implements OnInit {
 
+  @Output() onChanged = new EventEmitter<number>();
+
   items = ITEMS;
-  isButtonClick = false;
   styles = {
     min: true
   };
+  id = 0;
 
-  toggle() {
-    this.styles.min = !this.styles.min;
-    this.isButtonClick = !this.isButtonClick;
-  }
+  constructor() { }
+  ngOnInit() { }
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  pictureClick(id: number): void {
+    if (this.items[id]) {
+      this.id = id;
+    } else {
+      this.id = 0;
+    }
   }
 }
