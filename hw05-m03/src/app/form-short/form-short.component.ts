@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Search } from 'src/model/films';
+import { Search } from 'src/app/model/films';
 
 @Component({
   selector: 'app-form-short',

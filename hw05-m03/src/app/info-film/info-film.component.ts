@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { getShortInfo } from 'src/model/films';
+import { getShortInfo } from 'src/app/model/films';
 
 @Component({
   selector: 'app-info-film',

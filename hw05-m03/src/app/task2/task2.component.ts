@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { getSearchFilms, Search } from 'src/model/films';
+import { getSearchFilms, Search } from 'src/app/model/films';
 import { HttpServiceService } from '../http-service.service';
 
 @Component({
