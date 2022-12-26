@@ -1,0 +1,9 @@
+<p class="text-primary text-center fw-bolder fs-5">{{film?.Title}}</p>
+<p><b>Year:</b> {{film?.Year}}</p>
+<div class="rating">
+    <p class="rate" *ngFor="let rating of film?.Ratings"><i>{{rating['Source']}}:</i> {{rating['Value']}}</p>
+</div>
+<p><b>Runtime:</b> {{film?.Runtime}}</p>
+<p><b>Director:</b> {{film?.Director}}</p>
+<p><b>Actors:</b> {{film?.Actors}}</p>
+<p *ngIf="isShowPlot" class="small text-muted"><b>Plot:</b> {{film?.Plot}}</p>

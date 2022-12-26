@@ -1,0 +1,10 @@
+.findForm {
+  margin-bottom: 20px;
+}
+
+.find {
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 2px solid blue;
+}

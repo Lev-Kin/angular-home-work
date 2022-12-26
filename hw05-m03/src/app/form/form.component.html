@@ -1,0 +1,5 @@
+<form class="findForm" [formGroup]="form" (ngSubmit)="submit()">
+    <input class="find" type="text" name="film" formControlName="title" placeholder="enter movie (blade)">
+    <input class="find" type="number" name="year" formControlName="year" min="1970" max="2022" placeholder="year...">
+    <button class="btn" type="submit">Search</button>
+</form>

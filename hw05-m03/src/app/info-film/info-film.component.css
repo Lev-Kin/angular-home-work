@@ -1,0 +1,17 @@
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+.rate {
+  border: 1px violet solid;
+  padding: 2px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+p {
+  padding: 2px;
+  margin: 0;
+}

@@ -1,0 +1,30 @@
+.findForm {
+  margin-bottom: 20px;
+}
+
+.find {
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 2px solid blue;
+}
+
+.btn {
+  margin: 2px 5px 5px 5px;
+  border-radius: 20px;
+  border: 2px solid blue;
+  background: transparent;
+  background-color: lightgrey;
+  color: lightslategrey;
+}
+
+.btn:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.btn:active {
+  border: 2px solid blue;
+  background: gray;
+  color: aqua;
+}

@@ -1,1 +1,9 @@
-<p>task1 works!</p>
+<app-form-short (searchFilm)="getFilms($event)"></app-form-short>
+<div class="Film">
+    <div *ngFor="let film of searchResult; first as isFirst">
+        <hr *ngIf="!isFirst" class="text-bg-primary p-2">
+        <div class="filmCard" [ngStyle]="{ backgroundImage: 'url(' + film.Poster + ')' }"></div>
+        <app-info-film class="filmInfo" [class]='getInfoFilm(film.imdbID)' [idFilm]="idFilm"
+            [filmsInfo]="mapFilmInfo"></app-info-film>
+    </div>
+</div>
