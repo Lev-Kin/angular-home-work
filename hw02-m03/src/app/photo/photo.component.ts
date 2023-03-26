@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class PhotoComponent {
-  src = '../assets/image/photo600x600.jpg';
+  src = '../assets/image/photo.jpg';
 }
